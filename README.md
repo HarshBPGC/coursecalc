@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Course Option Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application designed to help students make informed decisions about choosing between PCT (Progressive Continuous Test) and Comprehensive Exam options for their courses.
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+This calculator helps students analyze their performance in both PCT and Comprehensive exams to determine which option would give them a better final score. It takes into account:
+- Individual scores in both PCT and Comprehensive exams
+- Class averages for both options
+- Percentage comparisons
+- Relative performance against class averages
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Add up to 10 courses for analysis
+- Input PCT and Comprehensive exam scores
+- View class averages for both options
+- Get detailed recommendations with:
+  - Clear choice recommendation (PCT/Comprehensive/Equal)
+  - Percentage advantage of the recommended option
+  - Performance comparison with class average
+- Modern, responsive UI
+- Easy to use interface
+- Real-time calculations
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to Use
 
-### `npm test`
+1. Enter course details:
+   - Course name
+   - PCT score and total marks
+   - PCT class average
+   - Comprehensive exam score and total marks
+   - Comprehensive exam class average
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Click "Add Course" to add it to the analysis table
 
-### `npm run build`
+3. View the recommendations:
+   - Green alert: PCT is recommended
+   - Blue alert: Comprehensive exam is recommended
+   - Yellow alert: Both options give equal results
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. The recommendation includes:
+   - The better option
+   - How much better it is (in percentage points)
+   - Your performance compared to class average
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technical Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Built with React and TypeScript
+- Uses Material-UI for modern, responsive design
+- Real-time calculations and updates
+- Mobile-friendly interface
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Add your deployed URL here after deployment]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Local Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository:
+```bash
+git clone https://github.com/HarshBPGC/coursecalc.git
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Install dependencies:
+```bash
+cd coursecalc
+npm install
+```
 
-## Learn More
+3. Start the development server:
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+This project is open source and available under the MIT License.
